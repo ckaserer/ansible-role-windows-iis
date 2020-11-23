@@ -1,0 +1,13 @@
+---
+- name: Update IIS Websites
+  community.windows.win_iis_website:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items: "{{ iis_websites }}"
+  register: iis_websites_result
+
+- name: Print debug info
+  debug:
+    var: iis_websites_result
+    verbosity: 1
+...

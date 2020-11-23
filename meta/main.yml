@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: windows_services
+  role_name: windows_iis
   author: ckaserer
-  description: "change service state"
+  description: "change iis website state"
   license: GPLv3
   min_ansible_version: 2.10
   platforms:
